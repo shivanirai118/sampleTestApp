@@ -1,0 +1,36 @@
+<p>meals works!</p>
+<button (click)="getMeal(); getMealNew()">Click me</button>
+<table class="table1" style="border: 1px solid black; ">
+    <tr>
+        <td>idMeal</td>
+        <td>strMeal</td>
+        <td>strDrinkAlternate</td>
+        <td>strCategory</td>
+        <td>strArea</td>
+    </tr>
+    <tr *ngFor="let data of getAllMeals">
+        <td>{{data.idMeal}}</td>
+        <td>{{data.strMeal}}</td>
+        <td>{{data.strDrinkAlternate}}</td>
+        <td>{{data.strCategory}}</td>
+        <td>{{data.strArea}}</td>
+    </tr>
+   
+</table>
+<table class="table2" id="tablenew" style="border: 1px solid black; text-align: right; ">
+    <tr>
+        <td>idMeal</td>
+        <td>strMeal</td>
+        <td>strDrinkAlternate</td>
+        <td>strCategory</td>
+        <td>strArea</td>
+    </tr>
+    <tr *ngFor="let data of getMeal1">
+        <td>{{data.idMeal}}</td>
+        <td>{{data.strMeal}}</td>
+        <td>{{data.strDrinkAlternate}}</td>
+        <td>{{data.strCategory}}</td>
+        <td>{{data.strArea}}</td>
+    </tr>
+   
+</table>
